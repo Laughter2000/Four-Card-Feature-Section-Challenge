@@ -1,0 +1,133 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color:hsl(0, 0%, 98%);
+}
+.wrapper {
+    width: 97%;
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+
+}
+.content {
+    display: grid;
+    gap: 30px;
+
+}
+header{
+    grid-row: 1/2;
+
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+    color: hsl(234, 12%, 34%);
+}
+#h1-one {
+    text-align: center;
+    font-weight: 200;
+}
+header p {
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+}
+.boxes {
+    width: 400px;
+    height: 250px;
+    text-align: left;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px  15px  hsl(229, 6%, 66%);
+}
+.supervisor {
+    grid-row: 2/3;
+    border-top-style: outset;
+    border-top-color: hsl(180, 62%, 55%);
+}
+.team-builder {
+    grid-row: 3/4;
+    border-top-style: outset;
+    border-top-color: hsl(0, 78%, 62%);
+}
+
+.karma {
+    grid-row: 4/5;
+    border-top-style: outset;
+    border-top-color: hsl(34, 97%, 64%);
+}
+.calculator {
+    grid-row: 5/6;
+    border-top-style: outset;
+    border-top-color: hsl(212, 86%, 64%);
+}
+footer {
+    grid-row: 6/7;
+}
+.supervisor, .team-builder,
+.karma, .calculator {
+    justify-self: center;
+}
+
+.boxes h2 {
+    margin-top: 30px;
+    margin-left: 30px;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+.boxes p {
+    margin-left: 30px;
+    color: hsl(229, 6%, 66%);
+}
+.boxes img {
+    position: relative;
+    left: 300px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 1200px) {
+    .content {
+        display: grid;
+        gap: 30px;
+        justify-content: center;
+    }
+    header {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .supervisor {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        align-self: center;
+    }
+    .team-builder {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .karma {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .calculator {
+        grid-column: 3/4;
+        grid-row: 2/4;
+        align-self: center;
+    }
+    footer {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+}
