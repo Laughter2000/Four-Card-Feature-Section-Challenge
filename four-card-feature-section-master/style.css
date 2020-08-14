@@ -43,8 +43,8 @@ header p {
     color: hsl(229, 6%, 66%);
 }
 .boxes {
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 270px;
     text-align: left;
     border-radius: 10px;
     background-color: white;
@@ -86,12 +86,13 @@ footer {
     font-weight: 600;
 }
 .boxes p {
+    max-width: 80%
     margin-left: 30px;
     color: hsl(229, 6%, 66%);
 }
 .boxes img {
     position: relative;
-    left: 300px;
+    left: 220px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
