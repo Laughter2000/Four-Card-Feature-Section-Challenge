@@ -5,6 +5,7 @@ html {
     box-sizing: inherit;
 }
 
+/* A comment that does nothing */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
